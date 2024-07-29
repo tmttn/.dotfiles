@@ -1,0 +1,12 @@
+# Brewfile
+brew "stow"
+
+# install apps
+cask 'wezterm'
+cask 'visual-studio-code-insiders'
+cask 'spectacle'
+cask 'intellij-idea'
+cask 'spotify'
+cask 'docker'
+cask 'slack'  
+cask 'amethyst'
