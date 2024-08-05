@@ -12,6 +12,7 @@ config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 12
 config.enable_tab_bar = false
 config.audible_bell = 'Disabled'
+config.window_background_opacity = 0.8
 
 -- and finally, return the configuration to wezterm
 return config
