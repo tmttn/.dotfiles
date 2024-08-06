@@ -1,3 +1,23 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = https://github.com/tmttn/kickstart.nvim.git
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-npm-scripts-autocomplete"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-npm-scripts-autocomplete
+	url = git@github.com:grigorii-zander/zsh-npm-scripts-autocomplete.git
+	branch = main
+[submodule "zsh/.oh-my-zsh/custom/plugins/gradle-completion"]
+	path = zsh/.oh-my-zsh/custom/plugins/gradle-completion
+	url = https://github.com/gradle/gradle-completion
+	branch = master
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+	branch = master
+[submodule "zsh/.oh-my-zsh/custom/plugins/_mvnctx"]
+	path = zsh/.oh-my-zsh/custom/plugins/_mvnctx
+	url = git@github.com:artemy/zsh-mvn-contexts.git
+	branch = master
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh-ssh"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh-ssh
+	url = git@github.com:sunlei/zsh-ssh.git
+	branch = master
