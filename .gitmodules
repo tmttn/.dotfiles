@@ -1,3 +1,6 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
 	url = https://github.com/tmttn/kickstart.nvim.git
+[submodule "zsh/.oh-my-zsh/custom/plugins/zsh/.oh-my-zsh/custom/plugins/gradle-completion"]
+	path = zsh/.oh-my-zsh/custom/plugins/zsh/.oh-my-zsh/custom/plugins/gradle-completion
+	url = https://github.com/gradle/gradle-completion
