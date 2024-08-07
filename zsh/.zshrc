@@ -17,7 +17,6 @@ export PATH="$PATH:$HOME/Library/PackageManager/bin:/Users/thomasmetten/.local/b
 export ZSH_TMUX_AUTOSTART=true
 export ZSH_TMUX_AUTOCONNECT=false
 export ZSH_TMUX_AUTONAME_SESSION=true
-export ZSH_TMUX_AUTOQUIT=false
 
 # Configure Brew's auto-update mechanism
 export HOMEBREW_AUTO_UPDATE_SECS="86400"
@@ -211,3 +210,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # zsh
 source <(fzf --zsh)
+
+# neofetch
+neofetch
