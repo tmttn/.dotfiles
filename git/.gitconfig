@@ -1,0 +1,12 @@
+[user]
+	name = Tom Metten
+	email = thomas.metten@gmail.com
+	signingkey = A87EC3CFF1A56431
+[init]
+	defaultBranch = main
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
