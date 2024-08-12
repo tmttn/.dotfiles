@@ -13,11 +13,6 @@ export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY="latest_available"
 # Path to your Blade CLI installation.
 export PATH="$PATH:$HOME/Library/PackageManager/bin:/Users/thomasmetten/.local/bin"
 
-# Tmux plugin
-export ZSH_TMUX_AUTOSTART=true
-export ZSH_TMUX_AUTOCONNECT=false
-export ZSH_TMUX_AUTONAME_SESSION=true
-
 # Configure Brew's auto-update mechanism
 export HOMEBREW_AUTO_UPDATE_SECS="86400"
 

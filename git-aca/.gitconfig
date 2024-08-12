@@ -1,0 +1,12 @@
+[user]
+	name = Thomas Metten
+	email = tom.metten@acagroup.be
+	signingkey = E6287717D24A595A
+[core]
+	autocrlf = input
+[push]
+	autoSetupRemote = true
+[commit]
+	gpgsign = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
