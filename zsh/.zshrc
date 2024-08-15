@@ -206,5 +206,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # zsh
 source <(fzf --zsh)
 
-# neofetch
-neofetch
+# fastfetch
+fastfetch
