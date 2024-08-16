@@ -21,3 +21,6 @@
 	path = zsh/.oh-my-zsh/custom/plugins/zsh-ssh
 	url = git@github.com:sunlei/zsh-ssh.git
 	branch = master
+[submodule "keyboard/.config/keyboards"]
+	path = keyboard/.config/keyboards
+	url = git@github.com:tmttn/keyboards.git
