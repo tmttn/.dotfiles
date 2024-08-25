@@ -1,0 +1,188 @@
+@import "mocha.css";
+@import url("colors.css");
+
+* {
+	border: none;
+	font-family: 'JetBrains Mono', 'Symbols Nerd Font Mono';
+	font-size: 14px;
+	font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+	min-height: 15px;
+	margin-bottom: 1px;
+}
+
+#waybar {
+	background: transparent;
+	color: @text;
+	margin: 5px 5px;
+}
+
+#custom-arch,
+#workspaces {
+	border-radius: 12px;
+	background-color: @bg-color;
+	color: @fg-color;
+	margin-top: 5px;
+	margin-right: 15px;
+	padding-top: 1px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#custom-arch {
+	font-size: 20px;
+	margin-left: 15px;
+	color: #000000;
+	background: linear-gradient(229deg, #19bc92, #c7a3dd, #ebf2aa, #e19788);
+	background-size: 800% 800%;
+	animation: playing 30s ease infinite;
+}
+
+
+#workspaces button {
+	background: @bg-color;
+	color: @fg-color;
+}
+
+#custom-spotify {
+	border-radius: 10px;
+	background-color: #1DB954;
+	color: @fg-color;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 15px;
+}
+
+#window,
+#mpris,
+#tray,
+#memory,
+#clock,
+#backlight,
+#pulseaudio,
+#bluetooth,
+#network,
+#battery {
+	border-radius: 8px;
+	background-color: @bg-color;
+	color: @fg-color;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 15px;
+}
+
+#tray {
+	margin-left: 10px;
+}
+
+
+#mpris.playing {
+	border-radius: 8px;
+	color: #32302f;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 15px;
+
+	background: linear-gradient(229deg, #19bc92, #c7a3dd, #ebf2aa, #e19788);
+	background-size: 800% 800%;
+
+	animation: playing 15s ease infinite;
+}
+
+@keyframes playing {
+	0% {
+		background-position: 0% 50%
+	}
+
+	33% {
+		background-position: 100% 50%
+	}
+
+	80% {
+		background-position: 100% 50%
+	}
+
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+#mpris.paused {
+	border-radius: 8px;
+	background-color: @bg-color;
+	color: @fg-color;
+	margin-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 15px;
+}
+
+#backlight,
+#bluetooth {
+	/* border-top-right-radius: 0; */
+	/* border-bottom-right-radius: 0; */
+	padding-right: 5px;
+	margin-right: 0
+}
+
+#bluetooth.connected {
+	color: #ffffff;
+	animation: bluetooth_connected_animation 15s linear infinite;
+}
+
+@keyframes bluetooth_connected_animation {
+	0% {
+		background-color: rgba(6, 124, 168, 1);
+	}
+
+	50% {
+		background-color: rgba(50, 62, 177, 0.9275911048012955);
+	}
+
+	100% {
+		background-color: rgba(6, 124, 168, 1);
+	}
+}
+
+#pulseaudio {
+	border-top-left-radius: 5;
+	border-bottom-left-radius: 5;
+	padding-left: 5px;
+}
+
+#network.wifi {
+	/* border-top-left-radius: 0; */
+	/* border-bottom-left-radius: 0; */
+	margin-left: 5px;
+	color: #FFFFFF;
+	padding-left: 5px;
+	/* animation: network_animation 4s linear infinite; */
+}
+
+@keyframes network_animation {
+	0% {
+		background-color: #418974;
+		background-position: 0% 50%;
+	}
+
+	33% {
+		background-color: rgba(9, 161, 153, 0.9275911048012955);
+		background-position: 100% 50%;
+	}
+
+	66% {
+		background-color: rgba(123, 166, 150, 1);
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-color: #418974;
+		background-position: 100% 50%;
+	}
+}
+
+#clock {
+	margin-right: 0;
+}
