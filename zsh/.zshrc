@@ -18,6 +18,15 @@ export HOMEBREW_AUTO_UPDATE_SECS="86400"
 
 export MODULAR_HOME="$HOME/.modular"
 export PATH="$MODULAR_HOME/pkg/packages.modular.com_mojo/bin:$PATH"
+
+# Colima
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+#export TESTCONTAINERS_HOST_OVERRIDE=$(colima ls -j | jq -r '.address')
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+
+# AWS
+export AWS_PROFILE=SSOPOL-IsaRoot-KubeDev-651706766291
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -208,3 +217,7 @@ source <(fzf --zsh)
 
 # fastfetch
 fastfetch
+
+eval $(thefuck --alias)
+
+alias claude="/Users/thomasmetten/.claude/local/claude"

@@ -1,6 +1,6 @@
 [user]
-	name = Thomas Metten
-	email = tom.metten@acagroup.be
+	name = Tom Metten
+	email = tmetten@isabelgroup.eu
 	signingkey = E6287717D24A595A
 [core]
 	autocrlf = input

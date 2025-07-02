@@ -11,3 +11,7 @@ PS1='[\u@\h \W]\$ '
 
 # Set Java Home
 . ~/.asdf/plugins/java/set-java-home.bash
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/thomasmetten/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
