@@ -1,14 +1,22 @@
+# Alternative ACA Configuration
+# This can be used manually if needed: git config --file ~/.dotfiles/git-aca/.gitconfig user.email
+
 [user]
 	name = Tom Metten
 	email = tom.metten@acagroup.be
 	signingkey = E6287717D24A595A
+
 [core]
 	autocrlf = input
+
 [push]
 	autoSetupRemote = true
+
 [commit]
 	gpgsign = true
+
 [gpg]
 	program = /opt/homebrew/bin/gpg
+
 [submodule]
 	recurse = true

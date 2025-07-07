@@ -1,7 +1,7 @@
 [user]
 	name = Tom Metten
-	email = thomas.metten@gmail.com
-	signingkey = A87EC3CFF1A56431
+	email = tom.metten@acagroup.be  # ACA work email for macOS laptops
+	signingkey = E6287717D24A595A  # ACA GPG key
 [init]
 	defaultBranch = main
 [credential "https://github.com"]
@@ -12,3 +12,17 @@
 	helper = !/usr/bin/gh auth git-credential
 [commit]
 	gpgsign = true
+[core]
+	autocrlf = input
+[push]
+	autoSetupRemote = true
+[gpg]
+	program = /opt/homebrew/bin/gpg
+[submodule]
+	recurse = true
+
+# ACA-specific aliases
+[alias]
+	aca-push = "!git push origin HEAD"
+	aca-sync = "!git fetch origin && git rebase origin/main"
+	work = "!echo 'Using ACA work configuration'"
