@@ -11,7 +11,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY="latest_available"
 
 # Path to your Blade CLI installation.
-export PATH="$PATH:$HOME/Library/PackageManager/bin:/Users/thomasmetten/.local/bin"
+export PATH="$PATH:$HOME/Library/PackageManager/bin:/Users/tommetten/.local/bin"
 
 # Configure Brew's auto-update mechanism
 export HOMEBREW_AUTO_UPDATE_SECS="86400"
@@ -25,7 +25,7 @@ export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
 export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 
 # AWS
-export AWS_PROFILE=SSOPOL-IsaRoot-KubeDev-651706766291
+export AWS_PROFILE=kube-dev
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -204,9 +204,9 @@ alias ...........="cd ../../../../../../../../../.."
 
 alias code="code-insiders"
 
-DATOCMS_AC_ZSH_SETUP_PATH=/Users/thomasmetten/Library/Caches/datocms/autocomplete/zsh_setup && test -f $DATOCMS_AC_ZSH_SETUP_PATH && source $DATOCMS_AC_ZSH_SETUP_PATH; # datocms autocomplete setup
+DATOCMS_AC_ZSH_SETUP_PATH=/Users/tommetten/Library/Caches/datocms/autocomplete/zsh_setup && test -f $DATOCMS_AC_ZSH_SETUP_PATH && source $DATOCMS_AC_ZSH_SETUP_PATH; # datocms autocomplete setup
 # bun completions
-[ -s "/Users/thomasmetten/.bun/_bun" ] && source "/Users/thomasmetten/.bun/_bun"
+[ -s "/Users/tommetten/.bun/_bun" ] && source "/Users/tommetten/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
@@ -219,5 +219,4 @@ source <(fzf --zsh)
 fastfetch
 
 eval $(thefuck --alias)
-
-alias claude="/Users/thomasmetten/.claude/local/claude"
+alias claude="/Users/tommetten/.claude/local/claude"
