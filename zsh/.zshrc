@@ -27,6 +27,9 @@ export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
 # AWS
 export AWS_PROFILE=kube-dev
 
+# GPG
+export GPG_TTY=$(tty)
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
