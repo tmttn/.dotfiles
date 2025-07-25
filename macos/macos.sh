@@ -31,3 +31,6 @@ defaults write com.apple.dock show-recents -bool false
 
 # disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# hold key for accents
+defaults write -g ApplePressAndHoldEnabled -bool true
